@@ -12,12 +12,12 @@
 
          json_validation(data)
          
- 2)Rename key of a dictionary.
+ 2) Rename key of a dictionary.
  
          code:
          dic[new_key]=dic.pop[old_key]
          
- 3)fuction called another name.
+ 3) fuction called another name.
  
       code:
       def show_record(name):
@@ -27,7 +27,7 @@
       display_record=show_record
       display_record(name="krishana")
       
- 4)
+ 4) 
  5)
  6)
 
