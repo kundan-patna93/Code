@@ -17,7 +17,16 @@
          code:
          dic[new_key]=dic.pop[old_key]
          
- 3)
+ 3)fuction called another name.
+ 
+      code:
+      def show_record(name):
+        print(name)
+   
+      show_record(name="sunil")
+      display_record=show_record
+      display_record(name="krishana")
+      
  4)
  5)
  6)
