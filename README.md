@@ -11,5 +11,15 @@
          data= """{ "company":{ "employee":{ "name":"emma", "payble":{ "salary":7000, "bonus":800} } } }"""
 
          json_validation(data)
+         
+ 2)Rename key of a dictionary.
+ 
+         code:
+         dic[new_key]=dic.pop[old_key]
+         
+ 3)
+ 4)
+ 5)
+ 6)
 
     
