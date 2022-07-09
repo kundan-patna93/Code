@@ -17,7 +17,7 @@
          code:
          dic[new_key]=dic.pop[old_key]
          
- 3) fuction called another name.
+ 3) Assign a different name to function and call it through the new name.
  
          code:
          def show_record(name):
