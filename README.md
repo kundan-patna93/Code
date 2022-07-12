@@ -27,7 +27,41 @@
          display_record=show_record
          display_record(name="krishana")
       
- 4) 
+ 4) Open two python threads and share a blank list between them.Then start first thread and append even numbers from 1 to 10 in the list,next start 2nd           thread and append odd.
+ 
+             
+         code:
+         from threading import *
+         from time import sleep
+
+         #Create list with use global
+         global lst
+         lst=[]
+
+         class EvenClass(Thread):
+             def run(self):
+                 for i in range(1,11):
+                     if i%2==0:
+                         lst.append(i)
+
+         class OddClass(Thread):
+             def run(self):
+                 for i in range(1,11):
+                     if i%2!=0:
+                         lst.append(i)
+
+         #Create Object
+         obj1=EvenClass()
+         obj2=OddClass()
+
+         obj1.start()
+         sleep(1)
+         obj2.start()
+
+         print(lst)
+
+ 
+ 
  5)
  6)
 
