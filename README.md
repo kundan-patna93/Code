@@ -12,12 +12,12 @@
 
          json_validation(data)
          
- 2)   Rename key of a dictionary.
+ 2) Rename key of a dictionary.
  
          code:
          dic[new_key]=dic.pop[old_key]
          
- 3)   Assign a different name to function and call it through the new name.
+ 3) Assign a different name to function and call it through the new name.
  
          code:
          def show_record(name):
@@ -27,7 +27,7 @@
          display_record=show_record
          display_record(name="krishana")
       
- 4)   Open two python threads and share a blank list between them.Then start first thread and append even numbers from 1 to 10 in the list,next start 2nd           thread and append odd.
+ 4) Open two python threads and share a blank list between them.Then start first thread and append even numbers from 1 to 10 in the list,next start 2nd           thread and append odd.
  
              
          code:
@@ -62,7 +62,7 @@
 
  
  
- 5)   Write a program to find HCF & LCM of given values:
+ 5) Write a program to find HCF & LCM of given values:
          
          
          
@@ -89,7 +89,7 @@
  
  
  
- 6)   Write a program to find LCM of given array elements
+ 6) Write a program to find LCM of given array elements
 
           
           Code:HCF
