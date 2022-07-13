@@ -12,12 +12,12 @@
 
          json_validation(data)
          
- 2) Rename key of a dictionary.
+ 2)   Rename key of a dictionary.
  
          code:
          dic[new_key]=dic.pop[old_key]
          
- 3) Assign a different name to function and call it through the new name.
+ 3)   Assign a different name to function and call it through the new name.
  
          code:
          def show_record(name):
@@ -27,7 +27,7 @@
          display_record=show_record
          display_record(name="krishana")
       
- 4) Open two python threads and share a blank list between them.Then start first thread and append even numbers from 1 to 10 in the list,next start 2nd           thread and append odd.
+ 4)   Open two python threads and share a blank list between them.Then start first thread and append even numbers from 1 to 10 in the list,next start 2nd           thread and append odd.
  
              
          code:
@@ -66,7 +66,7 @@
          
          
          
-          code:
+          code:HCF
           def find_hcf(a,b):
              for i in range(1,(min(a,b))+1):
                 if a%i==0 and b%i==0:
@@ -75,7 +75,7 @@
           find_hcf(702, 153)
 
          
-        
+          Code:LCM
           def find_lcm(a,b,c,d):
              i=max(a,b)
              while i>0:
@@ -89,6 +89,37 @@
  
  
  
- 6)
+ 6)   Write a program to find LCM of given array elements
+
+          
+          Code:HCF
+          def find_hcf_array_element(lst):
+            for i in range(1,(min(lst))+1):
+               c=0
+               for val in lst:
+                  if val%i==0:
+                     c=c+1
+               if len(lst)==c:
+                  hcf=i
+            print("HCF: ",hcf)
+
+          find_hcf_array_element(lst=[350, 500, 130, 260])
+
+          
+          code:LCM
+          def find_lcm_array_element(lst):
+            i=1
+            while i>0:
+               c=0
+               for val in lst:
+                  if i%val==0:
+                     c=c+1
+               if len(lst)==c:
+                  lcm=i
+                  break
+               i=i+1
+    
+            print("LCM: ",lcm)
+          fine_lcm_array_element(lst=[76, 26, 72])
 
     
