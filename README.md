@@ -121,5 +121,11 @@
     
             print("LCM: ",lcm)
           fine_lcm_array_element(lst=[76, 26, 72])
+          
+          
+   
+7) Without inbulid function reverse the list element.
+
+        code
 
     
