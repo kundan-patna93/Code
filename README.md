@@ -137,7 +137,7 @@
          list_val=[1,2,4,5,6,9,8,7]
          reverse_list_element(list_val)
          
-         code 2:
+         code 2: 
          def reverse_list(lst):
             l=len(lst)
             for i in range(0,len(lst)//2):
