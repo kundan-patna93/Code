@@ -126,6 +126,57 @@
    
 7) Without inbulid function reverse the list element.
 
-        code
+         code 1:
+         def reverse_list_element(list_val):
+            l=len(list_val)
+            out=[]
+            for i in range((l-1),-1,-1):
+               out.append(list_val[i])
+            print(out)
+
+         list_val=[1,2,4,5,6,9,8,7]
+         reverse_list_element(list_val)
+         
+         code 2:
+         def reverse_list(lst):
+            l=len(lst)
+            for i in range(0,len(lst)//2):
+               tem=lst[i]
+               lst[i]=lst[len(lst)-i-1]
+               lst[len(lst)-i-1]=tem
+         print(lst)
+
+         lst=[2,4,6,8,10,12]
+         reverse_list(lst)
+         
+         code 3:
+         def reverse_list(lst):
+            l=len(lst)//2
+            for i in range(l):
+               lst[i],lst[-1-i]=lst[-1-i],lst[i]
+            print(lst)
+
+         lst=[2,4,6,8,10,12]
+         reverse_list(lst)
+         
+         
+8) .
+
+         code :
+         
+         
+         
+9) .
+
+         code :
+10) .
+
+         code :
+11) .
+
+         code :
+         
+         
+
 
     
