@@ -160,10 +160,34 @@
          reverse_list(lst)
          
          
-8) .
+8) .CSV file Write and Read contents:
 
-         code :
+         code : Write CSV File
+         import csv
+         def create_csv_file_insert_records():
+             with open("emp.csv",'w',newline="") as f:
+                 w=csv.writer(f)
+                 w.writerow(["Name","Age","salary"])
+                 n=int(input("Enter no of record: "))
+                 for i in range(n):
+                     name=input("Enter name: ")
+                     age=int(input("Enter age: "))
+                     salary=int(input("Enter salary: "))
+                     w.writerow([name,age,salary])
+                     print("insert record: ",i,"\n")
+         create_csv_file_insert_records()
          
+         
+         code : Read CSV file
+         import csv
+         def read_csv_file_show_the_data():
+          with open("emp.csv",'r') as f:
+              r=csv.reader(f)
+              for val in r:
+                  for val2 in val:
+                      print(val2,end="\t")
+                  print()
+        read_csv_file_show_the_data()
          
          
 9) .
