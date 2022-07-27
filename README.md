@@ -162,7 +162,7 @@
          
 8) .CSV file Write and Read contents:
 
-         code : Write CSV File
+         Code : Write CSV File
          import csv
          def create_csv_file_insert_records():
              with open("emp.csv",'w',newline="") as f:
@@ -178,7 +178,7 @@
          create_csv_file_insert_records()
          
          
-         code : Read CSV file
+         Code : Read CSV file
          import csv
          def read_csv_file_show_the_data():
           with open("emp.csv",'r') as f:
@@ -190,9 +190,34 @@
         read_csv_file_show_the_data()
          
          
-9) .
+9) .Zip and unzip files
 
-         code :
+         code : Zip files
+         from zipfile import *
+         def zip_file():
+             f=ZipFile("files.zip",'w',ZIP_DEFLATED)
+             f.write("file1.txt")
+             f.write("file2.txt")
+             f.write("file3.txt")
+             f.close()
+             print("successfull create zipfile")
+         zip_file()
+         
+         
+         code : Unzip files
+         def unzip_file():
+          f=ZipFile("files.zip","r",ZIP_DEFLATED)
+          names=f.namelist()
+          for name in names:
+              print("file name: ",name)
+              f1=open(name,'r')
+              print(f1.read())
+              print()
+         unzip_file()
+
+
+
+
 10) .
 
          code :
