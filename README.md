@@ -234,8 +234,8 @@
               if c>1:
                   dic[chr]=c
           print(dic)
-      s="raam kunddan raviii kunalll"
-      fun(s)
+         s="raam kunddan raviii kunalll"
+         fun(s)
 
 
 11) .
