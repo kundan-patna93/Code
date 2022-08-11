@@ -218,9 +218,26 @@
 
 
 
-10) .
+10) .Count consecutive characters in the string.
 
          code :
+         def fun(s):
+          dic={}
+          curr=""
+          c=0
+          for chr in s:
+              if chr==curr:
+                  c=c+1
+              else:
+                  curr=chr
+                  c=1
+              if c>1:
+                  dic[chr]=c
+          print(dic)
+      s="raam kunddan raviii kunalll"
+      fun(s)
+
+
 11) .
 
          code :
